@@ -1,2 +1,3 @@
-# CDP first task to create multiple responsive page 
-<br> ##Using raw Html and CSS
+# CDP first task to create multiple responsive pages <be> 
+
+##Using raw HTML and CSS
