@@ -1,0 +1,73 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.firstpage{
+    width: 1440px;
+    height: 934px ;
+    padding-left: -1px;
+    padding: 150px, 255px, 150px, 255px
+
+}
+ul{
+    display: flex ;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px;
+
+}
+li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+li a:hover{
+    background-color: antiquewhite;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+
+}
+.heroarro{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    text-align: center;
+    padding: 50px 0; /* Adjust as needed */
+}
+
+
+.about div{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+
+}
+.maintext
+{
+    padding-top: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+.hero{
+
+  
+    justify-content: center;
+}
