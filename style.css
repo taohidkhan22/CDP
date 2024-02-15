@@ -46,15 +46,20 @@ li a:hover{
     justify-content: center;
 }
 
-.about-me {
-    text-align: center;
-    padding: 50px 0; /* Adjust as needed */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    background-color: #F2F2F2;
+    width: 100%;
 }
 
-
 .about div{
+    
     float: left;
-    width: 50%;
+    width: 45%;
     overflow: hidden;
 
 }
@@ -66,8 +71,33 @@ li a:hover{
     justify-content: center;
 
 }
+.horizontal{
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 2px solid #000; 
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+}
+h2 span { 
+    background:#F2F2F2;
+    padding:0 10px; 
+}
 .hero{
 
-  
     justify-content: center;
+}
+.b{
+    padding-top: 50px;
+    float: left;
+    overflow: hidden;
+}
+.text{
+    height: 551px;
+    width: 351px;
+}
+.photo{
+    
+    height: 300px;
+    width: 300px;
+    padding-left: 30px;
 }
