@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .firstpage{
     width: 1440px;
     height: 934px ;
@@ -11,22 +12,41 @@
     padding: 150px, 255px, 150px, 255px
 
 }
-ul{
-    display: flex ;
-    align-content: center;
-    justify-content: center;
-    list-style-type: none;
-    padding: 20px;
 
+.logo {
+    padding-right: 20px; 
 }
-li a{
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 10px;
+}
+
+li a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
 }
+
+.buttons button {
+    float: right;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.buttons button:first-child {
+    margin-right: 10px;
+}
+
 
 li a:hover{
     background-color: antiquewhite;
@@ -51,15 +71,16 @@ li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 100px;
     background-color: #F2F2F2;
     width: 100%;
+    
 }
 
 .about div{
     
     float: left;
-    width: 45%;
+    width: 60%;
     overflow: hidden;
 
 }
@@ -86,18 +107,22 @@ h2 span {
 
     justify-content: center;
 }
-.b{
+.container{
+    display: flex;
     padding-top: 50px;
-    float: left;
+    justify-content: space-between;
     overflow: hidden;
-}
-.text{
-    height: 551px;
-    width: 351px;
-}
-.photo{
     
-    height: 300px;
-    width: 300px;
-    padding-left: 30px;
+}
+
+.text p{
+       padding: 5px;
+       size: 30px;
+}
+.container .photo{
+    
+   display: flex;
+   height: 140px;
+   width: auto;
+    
 }
