@@ -242,3 +242,23 @@ button :hover{
     color: #4caf50;
     margin-right: 10px;
 }
+
+#scrollToTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 10px; 
+    right: 20px;
+    z-index: 10000; 
+    background-color: #4caf50; 
+    color: white; 
+    border: none;
+    border-radius: 17%; 
+    cursor: pointer; 
+    padding: 10px;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: white; 
+    color: #000;
+  }
+  
