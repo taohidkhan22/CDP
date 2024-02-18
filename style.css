@@ -153,30 +153,39 @@ h2 span {
     
 }
 
-.contact{
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 100px;
-        background-color: #F2F2F2;
-        width: 100%;
+.contact {
+    padding-top: 100px;
+    background-color: #F2F2F2;
+    width: 100%;
 }
 
-.contact .container{
-    max-width: 1000px;
+.contact .container {
+    max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.contact .container h2{
-    font-size: 36px;
-    margin-bottom: 40px;
+
+.contact .header {
+    margin-bottom: 30px;
 }
-.contact-wrapper{
+
+.spacer {
+    height: 20px;
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+}
+
+.contact-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
+
 .contact-form{
    
     text-align: left;
