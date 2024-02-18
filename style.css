@@ -10,6 +10,10 @@ li, a, button{
     text-decoration: none;
     color: black;
 }
+label{
+    font-size: 30px;
+    font-weight: 100;
+}
 header{
     display: flex;
     justify-content: space-between;
