@@ -168,7 +168,7 @@ h2 span {
 }
 
 .contact .header {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .spacer {
@@ -177,7 +177,7 @@ h2 span {
 
 .contact-content {
     width: 100%;
-    max-width: 600px; /* Adjust as needed */
+    max-width: 600px; 
 }
 
 .contact-wrapper {
