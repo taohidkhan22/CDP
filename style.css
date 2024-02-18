@@ -258,6 +258,7 @@ button :hover{
 #scrollToTopBtn {
     display: none; 
     position: fixed; 
+    justify-content: center;
     bottom: 10px; 
     right: 20px;
     z-index: 10000; 
