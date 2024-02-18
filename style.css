@@ -5,6 +5,18 @@
     box-sizing: border-box;
     
 }
+
+.menu {
+    display: none; 
+}
+.menu-icon {
+    font-size: 20px; 
+    
+}
+
+.menu.open {
+    display: block;
+}
 li, a, button{
     font-size: 20px;
     text-decoration: none;
