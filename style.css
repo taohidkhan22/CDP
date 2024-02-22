@@ -6,6 +6,8 @@
     
 }
 
+
+
 .menu {
     display: none; 
 }
@@ -28,6 +30,7 @@ label{
 }
 header{
     display: flex;
+    margin-left: 70px;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
@@ -98,7 +101,8 @@ li a:hover, a:active{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 100px;
+    margin-left: 40px;
 
 }
 .heroarro{
@@ -148,6 +152,7 @@ h2 span {
 .hero{
 
     justify-content: center;
+    align-items: center;
 }
 .container{
     display: flex;
@@ -265,7 +270,7 @@ button :hover{
     background-color: #4caf50; 
     color: white; 
     border: none;
-    border-radius: 17%; 
+    border-radius: 17%;
     cursor: pointer; 
     padding: 10px;
   }
