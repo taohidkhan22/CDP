@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     var myarray = [
-        { 'name': 'Taohid', 'id': '25', 'subject': 'DSD', 'marks': '25' },
-        { 'name': 'Taohid', 'id': '25', 'subject': 'DSD', 'marks': '25' },
-        { 'name': 'Taohid', 'id': '25', 'subject': 'DSD', 'marks': '25' },
+        { 'name': 'Taohid', 'id': '25', 'subject': 'DSD', 'marks': '78' },
+        { 'name': 'Arnob', 'id': '5', 'subject': 'SE', 'marks': '25' },
+        { 'name': 'Taohid', 'id': '25', 'subject': 'SA', 'marks': '60' },
+        { 'name': 'Taohid', 'id': '6', 'subject': 'ACC', 'marks': '40' },
+        { 'name': 'Arnob', 'id': '1', 'subject': 'HUM', 'marks': '70' },
     ];
 
     buildtable(myarray);
