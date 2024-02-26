@@ -33,34 +33,33 @@
 
 
 //APi to html table:
-document.addEventListener('DOMContentLoaded', function() {
+
+function fetchData() {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(data => buildTable(data))
         .catch(error => console.error('Error fetching data:', error));
+}
 
-    function buildTable(data) {
-        var tableBody = document.getElementById('myTable');
-        if (tableBody) {
-            var rows = '';
-            data.forEach(user => {
-                var row = `<tr> 
-                    <td>${user.id}</td>
-                    <td>${user.name}</td>
-                    <td>${user.username}</td>
-                    <td>${user.email}</td>
-                    <td>${user.phone}</td>
-                </tr>`;
-                rows += row;
-            });
-            tableBody.innerHTML = rows;
-        } else {
-            console.error("Element with ID 'myTable' not found.");
-        }
+function buildTable(data) {
+    var tableBody = document.getElementById('myTable');
+    if (tableBody) {
+        var rows = '';
+        data.forEach(user => {
+            var row = `<tr> 
+                <td>${user.id}</td>
+                <td>${user.name}</td>
+                <td>${user.username}</td>
+                <td>${user.email}</td>
+                <td>${user.website}</td>
+            </tr>`;
+            rows += row;
+        });
+        tableBody.innerHTML = rows;
+    } else {
+        console.error("Element with ID 'myTable' not found.");
     }
-});
-
-
+}
 // fetch('https://jsonplaceholder.typicode.com/users')
 //  .then(res =>{
 //     return res.json();
