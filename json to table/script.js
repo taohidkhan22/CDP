@@ -34,6 +34,24 @@
 
 //APi to html table:
 
+
+
+var tableVisible = false;
+
+function toggleData() {
+    if (tableVisible) {
+        document.getElementById('dataTable').style.display = 'none';
+        document.getElementById('buton').style.display = 'Fetch out';
+        document.getElementById('myTable').innerHTML = ''; 
+        tableVisible = false;
+    } else {
+        fetchData();
+        document.getElementById('dataTable').style.display = '';
+        
+        tableVisible = true;
+    }
+}
+
 function fetchData() {
     fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
