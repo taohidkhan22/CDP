@@ -8,8 +8,9 @@ table {
     border: 1px #dddddd;
     text-align: left;
     padding: 8px;
-    width: 25%;
+    width: 20%;
   }
+ 
   th{
     background-color: rgb(17, 104, 104);
     color: white;
