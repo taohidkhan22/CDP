@@ -110,7 +110,7 @@ function myFunction() {
     filter = input.value.toUpperCase();
     table = document.getElementById("dataTable");
     tr = table.getElementsByTagName("tr");
-
+    //console.log(hi);
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[1];
       if (td) {
