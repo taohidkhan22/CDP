@@ -1,148 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Rupkotha</title>
-    <!-- <link rel="icon" href="./logo.ico" type="image/x-icon" /> -->
-    <link rel="icon" href="./t-solid (2).svg" type="image/x-icon" />
+    <title>Json2Table</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="sript.js"></script>
-    
-</head>
-
-<body>
-  <div class="homepage">
-    <header>
-        <img src="./taohid.png" width="50px" height="50px" style="margin-left: 0px;" alt="">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="menu">
-            <ul class="nav_links">
-                <li ><a href="#" class="nav_link" data-section="aboutme">About</a></li>
-                <li><a title="Not working yet" href="#" class="nav_link" data-section="experience">Experience</a></li>
-                <li><a title="Not working yet" href="#" class="nav_link" data-section="project">Project</a></li>
-                <li><a href="#" class="nav_link" data-section="contact">Contact</a></li>
-            </ul>
-
-        </nav>
-        <a class="bt" href="#a">
-            <button>Resume</button>
-            <button>Hire Me</button>
-        </a>
-
-    </header>
-
-    <div class="firstpage">
-
-        <div class="hero">
-            <h1>Hi, I’m Md. Arnob Islam(Taohid)</h1>
-            <h4> I design and build things.</h4>
-        </div>
-
-        <div class="heroarro">
-
-            <a href="#aboutme"> <img src="./hero-arrow.png" alt=""></a>
-
-        </div>
-
-    </div>
-
-  </div>
    
-
-    <div class="about" id="aboutme">
-        <div class="a">
-
-            <h2 class="horizontal"><span>About Me</span></h2>
-
-        </div>
-
-        <div class="container">
-
-            <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent sit amet vestibulum felis.
-                    Vivamus facilisis ligula id fringilla gravida.
-                    Suspendisse ultricies sollicitudin lacus,
-                    et rutrum nunc bibendum sed.
-                </p>
-                <p>
-                    Donec tincidunt tellus sed libero ultricies, eu semper enim molestie.
-                    Etiam lorem quam, tincidunt nec malesuada eu, interdum nec leo.
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-                    Morbi placerat tortor sed felis tristique.
-
-                </p>
-                <p>
-                    Nunc aliquam magna ut nunc vestibulum, ut dictum nulla sagittis. Cras egestas magna sed nisl
-                    pellentesque, sed lobortis felis convallis.
-                    Phasellus eget ex at est lobortis iaculis eget non risus. Etiam ultricies at est sit amet
-                    condimentum.
-                </p>
-            </div>
-
-            <div class="photo">
-                <img src="./image2 new.jpg" height="150" width="">
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-    <section class="contact" id="contact">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="bt">
+        <button id="buton" onclick="toggleData()">Fetch Me</button>
         
-        <div class="container">
-            <div class="header">
-                <h2 class="horizontal"><span>Contact</span></h2>
-            </div>
-            <div class="spacer"></div>
-           
-            <div class="contact-wrapper">
-                <div class="contact-form">
-                    <!-- <h3 style="margin-bottom: 5px; font-size: 25px;">Send Message </h3> -->
-                    <form>
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" name="number" placeholder="Your Phone number">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message"></textarea>
-                        </div>
-                        <button>Send Massage</button>
-
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p> <i class="fas fa-phone"></i> +8801315-839775</p>
-                    <p><i class="fas fa-envelope"></i>taohid130@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i>Phartali, Raozan, Chittagong</p>
-
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <button  id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top">Top</button>
+    </div>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
     
-
+    <table table class="table" id="dataTable" style="display: none;">
+        <thead>
+            <tr class="bg-info">
+                <th>ID</th>
+                <th>Name</th>
+                <th>UserName</th>
+                <th>Email</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+        </tbody>
+    </table>
 </body>
-
 </html>
+
+

@@ -39,15 +39,17 @@
 var tableVisible = false;
 
 function toggleData() {
+    var button = document.getElementById('buton'); // Get a reference to the button element
     if (tableVisible) {
         document.getElementById('dataTable').style.display = 'none';
         document.getElementById('myTable').innerHTML = ''; 
         tableVisible = false;
+        button.innerText = "Fetch Me"; // Change button text when hiding the table
     } else {
         fetchData();
         document.getElementById('dataTable').style.display = '';
-        
         tableVisible = true;
+        button.innerText = "Fetch Out"; // Change button text when showing the table
     }
 }
 
@@ -102,7 +104,7 @@ function buildTable(data) {
     
 //Search option adding
 
-function myFunction() {\
+function myFunction() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -110,7 +112,7 @@ function myFunction() {\
     tr = table.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[1];
+        td = tr[i].getElementsByTagName("td")[2];
       if (td) {
         txtValue = td.textContent || td.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
