@@ -41,7 +41,6 @@ var tableVisible = false;
 function toggleData() {
     if (tableVisible) {
         document.getElementById('dataTable').style.display = 'none';
-        document.getElementById('buton').style.display = 'Fetch out';
         document.getElementById('myTable').innerHTML = ''; 
         tableVisible = false;
     } else {
@@ -101,4 +100,24 @@ function buildTable(data) {
     
 //     }
     
-//     loadIntoTable("https://gist.githubusercontent.com/sanjeevkumar91/056498117cb9a14828276a816090064f/raw/47aa48c4bf6b086468f8d9f5f4af8b7b8f478151/student-data.json", document.querySelector("table"));
+//Search option adding
+
+function myFunction() {\
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("dataTable");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
+  }
